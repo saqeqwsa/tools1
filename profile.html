@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-shadow {
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .profile-card {
+            transition: all 0.3s ease;
+        }
+        .profile-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        .stat-card {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- 顶部个人信息区域 -->
+    <div class="gradient-bg text-white p-6 pb-8">
+        <div class="flex items-center space-x-4">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face" 
+                 alt="用户头像" class="w-20 h-20 rounded-full border-4 border-white/30 object-cover">
+            <div class="flex-1">
+                <h1 class="text-xl font-bold mb-1">张小明</h1>
+                <p class="text-white/80 text-sm mb-2">全栈开发工程师</p>
+                <div class="flex items-center space-x-4 text-sm">
+                    <span><i class="fas fa-map-marker-alt mr-1"></i>北京</span>
+                    <span><i class="fas fa-briefcase mr-1"></i>3年经验</span>
+                </div>
+            </div>
+            <i class="fas fa-edit text-xl text-white/70"></i>
+        </div>
+    </div>
+
+    <!-- 统计信息 -->
+    <div class="px-6 -mt-4 mb-6">
+        <div class="bg-white rounded-2xl p-4 card-shadow">
+            <div class="grid grid-cols-3 gap-4">
+                <div class="text-center">
+                    <div class="text-2xl font-bold text-blue-600 mb-1">12</div>
+                    <div class="text-xs text-gray-500">完成项目</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-2xl font-bold text-green-600 mb-1">¥28.5K</div>
+                    <div class="text-xs text-gray-500">总收入</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-2xl font-bold text-purple-600 mb-1">4.9</div>
+                    <div class="text-xs text-gray-500">客户评分</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 技能标签 -->
+    <div class="px-6 mb-6">
+        <h2 class="text-lg font-semibold text-gray-800 mb-4">💪 技能标签</h2>
+        <div class="flex flex-wrap gap-2">
+            <span class="bg-blue-100 text-blue-700 px-3 py-2 rounded-full text-sm font-medium">JavaScript</span>
+            <span class="bg-green-100 text-green-700 px-3 py-2 rounded-full text-sm font-medium">React</span>
+            <span class="bg-purple-100 text-purple-700 px-3 py-2 rounded-full text-sm font-medium">Node.js</span>
+            <span class="bg-orange-100 text-orange-700 px-3 py-2 rounded-full text-sm font-medium">Python</span>
+            <span class="bg-red-100 text-red-700 px-3 py-2 rounded-full text-sm font-medium">UI/UX设计</span>
+            <span class="bg-indigo-100 text-indigo-700 px-3 py-2 rounded-full text-sm font-medium">项目管理</span>
+        </div>
+    </div>
+
+    <!-- 最近项目 -->
+    <div class="px-6 mb-6">
+        <h2 class="text-lg font-semibold text-gray-800 mb-4">📁 最近项目</h2>
+        <div class="space-y-3">
+            <div class="bg-white rounded-2xl p-4 card-shadow profile-card">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-code text-white text-lg"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800">电商网站开发</h3>
+                            <p class="text-sm text-gray-500">React + Node.js 全栈项目</p>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-lg font-bold text-green-600">¥8.5K</div>
+                        <div class="text-xs text-gray-400">已完成</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-4 card-shadow profile-card">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-600 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-mobile-alt text-white text-lg"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800">移动端UI设计</h3>
+                            <p class="text-sm text-gray-500">Figma 设计稿制作</p>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-lg font-bold text-blue-600">¥3.2K</div>
+                        <div class="text-xs text-gray-400">进行中</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 功能菜单 -->
+    <div class="px-6 mb-6">
+        <h2 class="text-lg font-semibold text-gray-800 mb-4">⚙️ 功能设置</h2>
+        <div class="bg-white rounded-2xl card-shadow overflow-hidden">
+            <div class="p-4 border-b border-gray-100 flex items-center justify-between profile-card">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center">
+                        <i class="fas fa-wallet text-blue-600"></i>
+                    </div>
+                    <span class="font-medium text-gray-800">我的钱包</span>
+                </div>
+                <i class="fas fa-chevron-right text-gray-400"></i>
+            </div>
+            
+            <div class="p-4 border-b border-gray-100 flex items-center justify-between profile-card">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center">
+                        <i class="fas fa-chart-bar text-green-600"></i>
+                    </div>
+                    <span class="font-medium text-gray-800">数据分析</span>
+                </div>
+                <i class="fas fa-chevron-right text-gray-400"></i>
+            </div>
+            
+            <div class="p-4 border-b border-gray-100 flex items-center justify-between profile-card">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-purple-100 rounded-xl flex items-center justify-center">
+                        <i class="fas fa-star text-purple-600"></i>
+                    </div>
+                    <span class="font-medium text-gray-800">我的收藏</span>
+                </div>
+                <i class="fas fa-chevron-right text-gray-400"></i>
+            </div>
+            
+            <div class="p-4 border-b border-gray-100 flex items-center justify-between profile-card">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-orange-100 rounded-xl flex items-center justify-center">
+                        <i class="fas fa-history text-orange-600"></i>
+                    </div>
+                    <span class="font-medium text-gray-800">使用记录</span>
+                </div>
+                <i class="fas fa-chevron-right text-gray-400"></i>
+            </div>
+            
+            <div class="p-4 flex items-center justify-between profile-card">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-red-100 rounded-xl flex items-center justify-center">
+                        <i class="fas fa-cog text-red-600"></i>
+                    </div>
+                    <span class="font-medium text-gray-800">设置</span>
+                </div>
+                <i class="fas fa-chevron-right text-gray-400"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- 成就徽章 -->
+    <div class="px-6 mb-6">
+        <h2 class="text-lg font-semibold text-gray-800 mb-4">🏆 成就徽章</h2>
+        <div class="grid grid-cols-4 gap-3">
+            <div class="text-center">
+                <div class="w-16 h-16 bg-yellow-100 rounded-2xl flex items-center justify-center mx-auto mb-2">
+                    <i class="fas fa-trophy text-yellow-600 text-2xl"></i>
+                </div>
+                <span class="text-xs text-gray-600">新手</span>
+            </div>
+            <div class="text-center">
+                <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-2">
+                    <i class="fas fa-rocket text-blue-600 text-2xl"></i>
+                </div>
+                <span class="text-xs text-gray-600">快速</span>
+            </div>
+            <div class="text-center">
+                <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-2">
+                    <i class="fas fa-heart text-green-600 text-2xl"></i>
+                </div>
+                <span class="text-xs text-gray-600">好评</span>
+            </div>
+            <div class="text-center">
+                <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-2">
+                    <i class="fas fa-gem text-purple-600 text-2xl"></i>
+                </div>
+                <span class="text-xs text-gray-600">专业</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部间距 -->
+    <div class="h-20"></div>
+</body>
+</html>

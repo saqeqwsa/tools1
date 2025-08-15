@@ -1,0 +1,101 @@
+<!--tools.wxml-->
+<view class="container">
+  <!-- 顶部搜索区域 -->
+  <view class="header-section">
+    <view class="header-title">
+      <text class="main-title">副业工具箱</text>
+      <image class="notification-icon" src="../../images/icons/setting.svg" bindtap="onNotificationTap"></image>
+    </view>
+    <view class="search-container">
+      <input class="search-input" placeholder="搜索工具、技能、项目..." value="{{searchValue}}" bindinput="onSearchInput"/>
+      <image class="search-icon" src="../../images/icons/question.svg"></image>
+    </view>
+  </view>
+
+  <!-- 快速分类 -->
+  <view class="category-section">
+    <view class="category-card">
+      <view class="category-grid">
+        <view class="category-item" wx:for="{{categories}}" wx:key="id" bindtap="onCategoryTap" data-category="{{item}}">
+          <view class="category-icon" style="background-color: {{item.bgColor}};">
+            <image class="icon-image" src="{{item.icon}}"></image>
+          </view>
+          <text class="category-name">{{item.name}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 热门推荐 -->
+  <view class="section">
+    <view class="section-header">
+      <text class="section-title">🔥 热门推荐</text>
+    </view>
+    <view class="tool-list">
+      <view class="tool-item" wx:for="{{hotTools}}" wx:key="id" bindtap="onToolTap" data-tool="{{item}}">
+        <view class="tool-content">
+          <image class="tool-avatar" src="{{item.avatar}}"></image>
+          <view class="tool-info">
+            <text class="tool-title">{{item.title}}</text>
+            <text class="tool-desc">{{item.description}}</text>
+            <view class="tool-meta">
+              <text class="tool-tag" style="background-color: {{item.tag.bgColor}}; color: {{item.tag.color}};">{{item.tag.text}}</text>
+              <text class="tool-rating">{{item.rating}}分</text>
+            </view>
+          </view>
+          <image class="arrow-icon" src="../../images/arrow.svg"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 技能学习 -->
+  <view class="section">
+    <view class="section-header">
+      <text class="section-title">📚 技能学习</text>
+    </view>
+    <view class="skill-grid">
+      <view class="skill-item" wx:for="{{skillCategories}}" wx:key="id" bindtap="onSkillTap" data-skill="{{item}}">
+        <view class="skill-icon" style="background: {{item.gradient}};">
+          <image class="skill-icon-image" src="{{item.icon}}"></image>
+        </view>
+        <text class="skill-title">{{item.title}}</text>
+        <text class="skill-desc">{{item.description}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 项目接单 -->
+  <view class="section">
+    <view class="section-header">
+      <text class="section-title">💼 项目接单</text>
+    </view>
+    <view class="project-card">
+      <view class="project-content">
+        <view class="project-info">
+          <text class="project-title">寻找项目机会</text>
+          <text class="project-desc">连接客户与自由职业者</text>
+        </view>
+        <view class="project-action">
+          <text class="action-text">立即查看</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 时间管理 -->
+  <view class="section">
+    <view class="section-header">
+      <text class="section-title">⏰ 时间管理</text>
+    </view>
+    <view class="time-grid">
+      <view class="time-item" wx:for="{{timeTools}}" wx:key="id" bindtap="onTimeToolTap" data-tool="{{item}}">
+        <view class="time-icon" style="background: {{item.gradient}};">
+          <image class="time-icon-image" src="{{item.icon}}"></image>
+        </view>
+        <text class="time-title">{{item.title}}</text>
+        <text class="time-desc">{{item.description}}</text>
+      </view>
+    </view>
+  </view>
+</view>
