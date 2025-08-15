@@ -3,32 +3,13 @@
   background-color: #f9fafb;
   min-height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  width: 100%;
 }
 
 /* 顶部区域 */
 .header-section {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
-  padding: 6vw 6vw 8vw 6vw;
-}
-
-@media (max-width: 375px) {
-  .header-section {
-    padding: 32rpx 32rpx 48rpx 32rpx;
-  }
-}
-
-@media (min-width: 376px) and (max-width: 414px) {
-  .header-section {
-    padding: 48rpx 48rpx 64rpx 48rpx;
-  }
-}
-
-@media (min-width: 415px) {
-  .header-section {
-    padding: 56rpx 56rpx 72rpx 56rpx;
-  }
+  padding: 48rpx 48rpx 64rpx 48rpx;
 }
 
 .header-title {
@@ -39,20 +20,8 @@
 }
 
 .main-title {
-  font-size: 8vw;
+  font-size: 48rpx;
   font-weight: 700;
-}
-
-@media (max-width: 375px) {
-  .main-title { font-size: 44rpx; }
-}
-
-@media (min-width: 376px) and (max-width: 414px) {
-  .main-title { font-size: 48rpx; }
-}
-
-@media (min-width: 415px) {
-  .main-title { font-size: 52rpx; }
 }
 
 .notification-icon {
@@ -90,33 +59,9 @@
 
 /* 快速分类 */
 .category-section {
-  padding: 0 6vw;
-  margin-top: -4vw;
-  margin-bottom: 6vw;
-}
-
-@media (max-width: 375px) {
-  .category-section {
-    padding: 0 32rpx;
-    margin-top: -24rpx;
-    margin-bottom: 32rpx;
-  }
-}
-
-@media (min-width: 376px) and (max-width: 414px) {
-  .category-section {
-    padding: 0 48rpx;
-    margin-top: -32rpx;
-    margin-bottom: 48rpx;
-  }
-}
-
-@media (min-width: 415px) {
-  .category-section {
-    padding: 0 56rpx;
-    margin-top: -40rpx;
-    margin-bottom: 56rpx;
-  }
+  padding: 0 48rpx;
+  margin-top: -32rpx;
+  margin-bottom: 48rpx;
 }
 
 .category-card {
@@ -161,29 +106,8 @@
 
 /* 通用section */
 .section {
-  padding: 0 6vw;
-  margin-bottom: 6vw;
-}
-
-@media (max-width: 375px) {
-  .section {
-    padding: 0 32rpx;
-    margin-bottom: 32rpx;
-  }
-}
-
-@media (min-width: 376px) and (max-width: 414px) {
-  .section {
-    padding: 0 48rpx;
-    margin-bottom: 48rpx;
-  }
-}
-
-@media (min-width: 415px) {
-  .section {
-    padding: 0 56rpx;
-    margin-bottom: 56rpx;
-  }
+  padding: 0 48rpx;
+  margin-bottom: 48rpx;
 }
 
 .section-header {
@@ -408,12 +332,12 @@
   display: block;
   font-size: 32rpx;
   font-weight: 600;
-  color: #1F2937;
+  color: #1a1a1a;
   margin-bottom: 8rpx;
 }
 
 .time-desc {
   display: block;
   font-size: 24rpx;
-  color: #6B7280;
+  color: #666;
 }

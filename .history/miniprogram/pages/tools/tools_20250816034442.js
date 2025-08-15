@@ -80,14 +80,14 @@ Page({
         title: '在线课程',
         description: '海量技能课程',
         iconText: '🎓',
-        gradient: 'linear-gradient(135deg, #60A5FA, #3B82F6)'
+        gradient: 'linear-gradient(135deg, #3B82F6, #1D4ED8)'
       },
       {
         id: 2,
         title: '电子书库',
         description: '专业书籍资源',
         iconText: '📚',
-        gradient: 'linear-gradient(135deg, #4ADE80, #22C55E)'
+        gradient: 'linear-gradient(135deg, #10B981, #059669)'
       }
     ],
     timeTools: [
@@ -95,15 +95,15 @@ Page({
         id: 1,
         title: '番茄钟',
         description: '专注工作法',
-        iconText: '🕒',
-        gradient: 'linear-gradient(135deg, #A78BFA, #8B5CF6)'
+        iconText: '🍅',
+        gradient: 'linear-gradient(135deg, #8B5CF6, #7C3AED)'
       },
       {
         id: 2,
         title: '任务清单',
         description: '高效任务管理',
         iconText: '✅',
-        gradient: 'linear-gradient(135deg, #FB923C, #F97316)'
+        gradient: 'linear-gradient(135deg, #F59E0B, #D97706)'
       }
     ]
   },

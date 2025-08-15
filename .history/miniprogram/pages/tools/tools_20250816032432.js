@@ -6,33 +6,33 @@ Page({
       {
         id: 1,
         name: '编程开发',
-        iconText: '{}', 
-        bgColor: '#DBEAFE',
-        iconColor: '#2563EB',
+        iconText: '</>', 
+        bgColor: '#EBF4FF',
+        iconColor: '#3B82F6',
         type: 'programming'
       },
       {
         id: 2,
         name: '文案写作',
         iconText: '✎',
-        bgColor: '#DCFCE7',
-        iconColor: '#16A34A',
+        bgColor: '#F0FDF4',
+        iconColor: '#10B981',
         type: 'writing'
       },
       {
         id: 3,
         name: '摄影设计',
         iconText: '📷',
-        bgColor: '#F3E8FF',
-        iconColor: '#9333EA',
+        bgColor: '#FAF5FF',
+        iconColor: '#8B5CF6',
         type: 'design'
       },
       {
         id: 4,
         name: '数据分析',
-        iconText: '📈',
-        bgColor: '#FED7AA',
-        iconColor: '#EA580C',
+        iconText: '📊',
+        bgColor: '#FFF7ED',
+        iconColor: '#F59E0B',
         type: 'data'
       }
     ],
@@ -80,14 +80,14 @@ Page({
         title: '在线课程',
         description: '海量技能课程',
         iconText: '🎓',
-        gradient: 'linear-gradient(135deg, #60A5FA, #3B82F6)'
+        gradient: 'linear-gradient(135deg, #3B82F6, #1D4ED8)'
       },
       {
         id: 2,
         title: '电子书库',
         description: '专业书籍资源',
         iconText: '📚',
-        gradient: 'linear-gradient(135deg, #4ADE80, #22C55E)'
+        gradient: 'linear-gradient(135deg, #10B981, #059669)'
       }
     ],
     timeTools: [
@@ -95,15 +95,15 @@ Page({
         id: 1,
         title: '番茄钟',
         description: '专注工作法',
-        iconText: '🕒',
-        gradient: 'linear-gradient(135deg, #A78BFA, #8B5CF6)'
+        iconText: '🍅',
+        gradient: 'linear-gradient(135deg, #8B5CF6, #7C3AED)'
       },
       {
         id: 2,
         title: '任务清单',
         description: '高效任务管理',
         iconText: '✅',
-        gradient: 'linear-gradient(135deg, #FB923C, #F97316)'
+        gradient: 'linear-gradient(135deg, #F59E0B, #D97706)'
       }
     ]
   },

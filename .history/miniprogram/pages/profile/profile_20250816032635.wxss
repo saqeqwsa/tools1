@@ -1,0 +1,312 @@
+/* profile.wxss */
+.container {
+  background-color: #f6f6f6;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* 顶部个人信息区域 */
+.header-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 48rpx;
+  padding-bottom: 64rpx;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.avatar {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 80rpx;
+  border: 8rpx solid rgba(255, 255, 255, 0.3);
+  margin-right: 32rpx;
+}
+
+.user-details {
+  flex: 1;
+}
+
+.username {
+  display: block;
+  font-size: 42rpx;
+  font-weight: bold;
+  margin-bottom: 8rpx;
+}
+
+.user-title {
+  display: block;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 28rpx;
+  margin-bottom: 16rpx;
+}
+
+.user-meta {
+  display: flex;
+  align-items: center;
+  gap: 32rpx;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+}
+
+.meta-icon {
+  font-size: 24rpx;
+  margin-right: 8rpx;
+}
+
+.edit-icon {
+  font-size: 42rpx;
+  opacity: 0.7;
+}
+
+/* 统计信息 */
+.stats-section {
+  padding: 0 48rpx;
+  margin-top: -32rpx;
+  margin-bottom: 48rpx;
+}
+
+.stats-card {
+  background: white;
+  border-radius: 32rpx;
+  padding: 32rpx;
+  box-shadow: 0 8rpx 40rpx rgba(0, 0, 0, 0.1);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32rpx;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #3B82F6;
+  margin-bottom: 8rpx;
+}
+
+.stat-label {
+  display: block;
+  font-size: 24rpx;
+  color: #666;
+}
+
+/* 通用section */
+.section {
+  padding: 0 48rpx;
+  margin-bottom: 48rpx;
+}
+
+.section-header {
+  margin-bottom: 32rpx;
+}
+
+.section-title {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+/* 技能标签 */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16rpx;
+}
+
+.skill-tag {
+  padding: 16rpx 24rpx;
+  border-radius: 40rpx;
+  font-size: 28rpx;
+  font-weight: 500;
+}
+
+/* 项目列表 */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24rpx;
+}
+
+.project-item {
+  background: white;
+  border-radius: 32rpx;
+  padding: 32rpx;
+  box-shadow: 0 8rpx 40rpx rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.project-item:active {
+  transform: scale(0.98);
+}
+
+.project-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.project-icon {
+  width: 96rpx;
+  height: 96rpx;
+  border-radius: 24rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 24rpx;
+}
+
+.project-icon-text {
+  font-size: 48rpx;
+  color: white;
+  line-height: 1;
+}
+
+.project-info {
+  flex: 1;
+}
+
+.project-title {
+  display: block;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 8rpx;
+}
+
+.project-desc {
+  display: block;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.project-right {
+  text-align: right;
+}
+
+.project-price {
+  display: block;
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #10B981;
+  margin-bottom: 4rpx;
+}
+
+.project-status {
+  display: block;
+  font-size: 24rpx;
+}
+
+/* 功能菜单 */
+.menu-card {
+  background: white;
+  border-radius: 32rpx;
+  box-shadow: 0 8rpx 40rpx rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32rpx;
+  border-bottom: 2rpx solid #f6f6f6;
+  transition: background-color 0.3s ease;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.menu-item:active {
+  background-color: #f9f9f9;
+}
+
+.menu-left {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 24rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 24rpx;
+}
+
+.menu-icon-img {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.menu-text {
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.menu-arrow {
+  width: 32rpx;
+  height: 32rpx;
+  opacity: 0.6;
+}
+
+/* 成就徽章 */
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24rpx;
+}
+
+.achievement-item {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.achievement-item:active {
+  transform: scale(0.95);
+}
+
+.achievement-icon {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 32rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16rpx auto;
+}
+
+.achievement-icon-img {
+  width: 64rpx;
+  height: 64rpx;
+}
+
+.achievement-name {
+  display: block;
+  font-size: 24rpx;
+  color: #666;
+}

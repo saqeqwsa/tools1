@@ -3,22 +3,22 @@
   <!-- 顶部个人信息区域 -->
   <view class="header-section">
     <view class="profile-info">
-      <image class="avatar" src="{{userInfo.avatar || 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face'}}" mode="aspectFill"></image>
+      <image class="avatar" src="{{userInfo.avatar || '../../images/icons/avatar.png'}}"></image>
       <view class="user-details">
         <text class="username">{{userInfo.nickname || '张小明'}}</text>
         <text class="user-title">{{userInfo.title || '全栈开发工程师'}}</text>
         <view class="user-meta">
           <text class="meta-item">
-            <text class="meta-icon">📍</text>
+            <image class="meta-icon" src="../../images/icons/avatar.png"></image>
             {{userInfo.location || '北京'}}
           </text>
           <text class="meta-item">
-            <text class="meta-icon">💼</text>
+            <image class="meta-icon" src="../../images/icons/business.png"></image>
             {{userInfo.experience || '3年经验'}}
           </text>
         </view>
       </view>
-      <text class="edit-icon" bindtap="onEditProfile">✏️</text>
+      <image class="edit-icon" src="../../images/icons/setting.svg" bindtap="onEditProfile"></image>
     </view>
   </view>
 
@@ -64,7 +64,7 @@
         <view class="project-content">
           <view class="project-left">
             <view class="project-icon" style="background: {{item.gradient}};">
-              <text class="project-icon-text">{{item.iconText}}</text>
+              <image class="project-icon-img" src="{{item.icon}}"></image>
             </view>
             <view class="project-info">
               <text class="project-title">{{item.title}}</text>
@@ -89,11 +89,11 @@
       <view class="menu-item" wx:for="{{menuItems}}" wx:key="id" bindtap="onMenuTap" data-menu="{{item}}">
         <view class="menu-left">
           <view class="menu-icon" style="background-color: {{item.bgColor}};">
-            <text class="menu-icon-text" style="color: {{item.iconColor}};">{{item.iconText}}</text>
+            <image class="menu-icon-img" src="{{item.icon}}"></image>
           </view>
           <text class="menu-text">{{item.title}}</text>
         </view>
-        <text class="menu-arrow">›</text>
+        <image class="menu-arrow" src="../../images/arrow.svg"></image>
       </view>
     </view>
   </view>
@@ -106,7 +106,7 @@
     <view class="achievement-grid">
       <view class="achievement-item" wx:for="{{achievements}}" wx:key="id" bindtap="onAchievementTap" data-achievement="{{item}}">
         <view class="achievement-icon" style="background-color: {{item.bgColor}};">
-          <text class="achievement-icon-text" style="color: {{item.iconColor}};">{{item.iconText}}</text>
+          <image class="achievement-icon-img" src="{{item.icon}}"></image>
         </view>
         <text class="achievement-name">{{item.name}}</text>
       </view>

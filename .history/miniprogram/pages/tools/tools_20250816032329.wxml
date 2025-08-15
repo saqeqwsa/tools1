@@ -18,7 +18,7 @@
       <view class="category-grid">
         <view class="category-item" wx:for="{{categories}}" wx:key="id" bindtap="onCategoryTap" data-category="{{item}}">
           <view class="category-icon" style="background-color: {{item.bgColor}};">
-            <text class="icon-text" style="color: {{item.iconColor}};">{{item.iconText}}</text>
+            <text class="icon-text">{{item.iconText}}</text>
           </view>
           <text class="category-name">{{item.name}}</text>
         </view>
@@ -90,7 +90,7 @@
     </view>
     <view class="time-grid">
       <view class="time-item" wx:for="{{timeTools}}" wx:key="id" bindtap="onTimeToolTap" data-tool="{{item}}">
-        <view class="time-icon" style="background: {{item.gradient}};">
+        <view class="time-icon" style="background: {{item.bgColor}};">
           <text class="time-icon-text">{{item.iconText}}</text>
         </view>
         <text class="time-title">{{item.title}}</text>

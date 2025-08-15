@@ -106,7 +106,7 @@
     <view class="achievement-grid">
       <view class="achievement-item" wx:for="{{achievements}}" wx:key="id" bindtap="onAchievementTap" data-achievement="{{item}}">
         <view class="achievement-icon" style="background-color: {{item.bgColor}};">
-          <text class="achievement-icon-text" style="color: {{item.iconColor}};">{{item.iconText}}</text>
+          <image class="achievement-icon-img" src="{{item.icon}}"></image>
         </view>
         <text class="achievement-name">{{item.name}}</text>
       </view>

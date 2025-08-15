@@ -39,20 +39,8 @@
 }
 
 .main-title {
-  font-size: 8vw;
+  font-size: 48rpx;
   font-weight: 700;
-}
-
-@media (max-width: 375px) {
-  .main-title { font-size: 44rpx; }
-}
-
-@media (min-width: 376px) and (max-width: 414px) {
-  .main-title { font-size: 48rpx; }
-}
-
-@media (min-width: 415px) {
-  .main-title { font-size: 52rpx; }
 }
 
 .notification-icon {
@@ -90,33 +78,9 @@
 
 /* 快速分类 */
 .category-section {
-  padding: 0 6vw;
-  margin-top: -4vw;
-  margin-bottom: 6vw;
-}
-
-@media (max-width: 375px) {
-  .category-section {
-    padding: 0 32rpx;
-    margin-top: -24rpx;
-    margin-bottom: 32rpx;
-  }
-}
-
-@media (min-width: 376px) and (max-width: 414px) {
-  .category-section {
-    padding: 0 48rpx;
-    margin-top: -32rpx;
-    margin-bottom: 48rpx;
-  }
-}
-
-@media (min-width: 415px) {
-  .category-section {
-    padding: 0 56rpx;
-    margin-top: -40rpx;
-    margin-bottom: 56rpx;
-  }
+  padding: 0 48rpx;
+  margin-top: -32rpx;
+  margin-bottom: 48rpx;
 }
 
 .category-card {
@@ -161,29 +125,8 @@
 
 /* 通用section */
 .section {
-  padding: 0 6vw;
-  margin-bottom: 6vw;
-}
-
-@media (max-width: 375px) {
-  .section {
-    padding: 0 32rpx;
-    margin-bottom: 32rpx;
-  }
-}
-
-@media (min-width: 376px) and (max-width: 414px) {
-  .section {
-    padding: 0 48rpx;
-    margin-bottom: 48rpx;
-  }
-}
-
-@media (min-width: 415px) {
-  .section {
-    padding: 0 56rpx;
-    margin-bottom: 56rpx;
-  }
+  padding: 0 48rpx;
+  margin-bottom: 48rpx;
 }
 
 .section-header {

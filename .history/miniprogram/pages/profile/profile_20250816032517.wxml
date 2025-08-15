@@ -89,11 +89,11 @@
       <view class="menu-item" wx:for="{{menuItems}}" wx:key="id" bindtap="onMenuTap" data-menu="{{item}}">
         <view class="menu-left">
           <view class="menu-icon" style="background-color: {{item.bgColor}};">
-            <text class="menu-icon-text" style="color: {{item.iconColor}};">{{item.iconText}}</text>
+            <image class="menu-icon-img" src="{{item.icon}}"></image>
           </view>
           <text class="menu-text">{{item.title}}</text>
         </view>
-        <text class="menu-arrow">›</text>
+        <image class="menu-arrow" src="../../images/arrow.svg"></image>
       </view>
     </view>
   </view>
@@ -106,7 +106,7 @@
     <view class="achievement-grid">
       <view class="achievement-item" wx:for="{{achievements}}" wx:key="id" bindtap="onAchievementTap" data-achievement="{{item}}">
         <view class="achievement-icon" style="background-color: {{item.bgColor}};">
-          <text class="achievement-icon-text" style="color: {{item.iconColor}};">{{item.iconText}}</text>
+          <image class="achievement-icon-img" src="{{item.icon}}"></image>
         </view>
         <text class="achievement-name">{{item.name}}</text>
       </view>

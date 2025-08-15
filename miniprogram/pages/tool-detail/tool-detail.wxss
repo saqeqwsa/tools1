@@ -1,0 +1,382 @@
+/* tool-detail.wxss */
+.container {
+  background-color: #f6f6f6;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  padding-bottom: 120rpx;
+}
+
+/* 工具头部信息 */
+.tool-header {
+  background: white;
+  padding: 48rpx;
+  margin-bottom: 24rpx;
+}
+
+.tool-main-info {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 32rpx;
+}
+
+.tool-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 24rpx;
+  margin-right: 24rpx;
+}
+
+.tool-details {
+  flex: 1;
+}
+
+.tool-title {
+  display: block;
+  font-size: 42rpx;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin-bottom: 8rpx;
+}
+
+.tool-subtitle {
+  display: block;
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 16rpx;
+}
+
+.tool-meta {
+  margin-top: 16rpx;
+}
+
+.rating-section {
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+}
+
+.rating-score {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #F59E0B;
+}
+
+.stars {
+  display: flex;
+  gap: 4rpx;
+}
+
+.star {
+  width: 24rpx;
+  height: 24rpx;
+}
+
+.rating-count {
+  font-size: 24rpx;
+  color: #666;
+}
+
+.tool-actions {
+  display: flex;
+  gap: 16rpx;
+}
+
+.action-btn {
+  border: none;
+  border-radius: 16rpx;
+  font-size: 28rpx;
+  font-weight: 500;
+}
+
+.action-btn.primary {
+  background: #3B82F6;
+  color: white;
+  padding: 16rpx 32rpx;
+  flex: 1;
+}
+
+.action-btn.secondary {
+  background: #F3F4F6;
+  color: #666;
+  padding: 16rpx;
+  width: 96rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.collect-icon {
+  width: 32rpx;
+  height: 32rpx;
+}
+
+/* 通用section */
+.section {
+  background: white;
+  margin-bottom: 24rpx;
+  padding: 48rpx;
+}
+
+.section-title {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 32rpx;
+}
+
+/* 功能特色 */
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24rpx;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+}
+
+.feature-icon {
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.feature-text {
+  font-size: 28rpx;
+  color: #333;
+}
+
+/* 工具介绍 */
+.description-card {
+  background: #F9FAFB;
+  border-radius: 16rpx;
+  padding: 32rpx;
+}
+
+.description-text {
+  font-size: 28rpx;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* 使用教程 */
+.tutorial-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24rpx;
+}
+
+.tutorial-item {
+  display: flex;
+  align-items: center;
+  padding: 24rpx;
+  background: #F9FAFB;
+  border-radius: 16rpx;
+  transition: background-color 0.3s ease;
+}
+
+.tutorial-item:active {
+  background-color: #F3F4F6;
+}
+
+.tutorial-number {
+  width: 64rpx;
+  height: 64rpx;
+  background: #3B82F6;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+  font-weight: bold;
+  margin-right: 24rpx;
+}
+
+.tutorial-content {
+  flex: 1;
+}
+
+.tutorial-title {
+  display: block;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 8rpx;
+}
+
+.tutorial-desc {
+  display: block;
+  font-size: 26rpx;
+  color: #666;
+}
+
+.tutorial-arrow {
+  width: 32rpx;
+  height: 32rpx;
+  opacity: 0.6;
+}
+
+/* 用户评价 */
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32rpx;
+  margin-bottom: 32rpx;
+}
+
+.review-item {
+  padding: 32rpx;
+  background: #F9FAFB;
+  border-radius: 16rpx;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16rpx;
+}
+
+.reviewer-avatar {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 50%;
+  margin-right: 16rpx;
+}
+
+.reviewer-info {
+  flex: 1;
+}
+
+.reviewer-name {
+  display: block;
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 8rpx;
+}
+
+.review-meta {
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+}
+
+.review-stars {
+  display: flex;
+  gap: 4rpx;
+}
+
+.star-small {
+  width: 20rpx;
+  height: 20rpx;
+}
+
+.review-date {
+  font-size: 24rpx;
+  color: #666;
+}
+
+.review-content {
+  font-size: 28rpx;
+  line-height: 1.5;
+  color: #333;
+}
+
+.load-more {
+  text-align: center;
+  padding: 24rpx;
+  color: #3B82F6;
+  font-size: 28rpx;
+  border: 2rpx solid #E5E7EB;
+  border-radius: 16rpx;
+  background: white;
+}
+
+/* 相关推荐 */
+.related-tools {
+  white-space: nowrap;
+}
+
+.related-item {
+  display: inline-block;
+  width: 200rpx;
+  margin-right: 24rpx;
+  text-align: center;
+  background: #F9FAFB;
+  border-radius: 16rpx;
+  padding: 24rpx;
+  vertical-align: top;
+}
+
+.related-avatar {
+  width: 96rpx;
+  height: 96rpx;
+  border-radius: 16rpx;
+  margin-bottom: 16rpx;
+}
+
+.related-title {
+  display: block;
+  font-size: 26rpx;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 8rpx;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.related-rating {
+  font-size: 24rpx;
+  color: #F59E0B;
+}
+
+/* 底部操作栏 */
+.bottom-actions {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  border-top: 2rpx solid #E5E7EB;
+  padding: 24rpx 48rpx;
+  padding-bottom: calc(24rpx + env(safe-area-inset-bottom));
+  display: flex;
+  gap: 24rpx;
+  align-items: center;
+}
+
+.share-btn,
+.contact-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+  border: none;
+  color: #666;
+  font-size: 20rpx;
+  padding: 0;
+}
+
+.share-icon,
+.contact-icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-bottom: 8rpx;
+}
+
+.use-now-btn {
+  flex: 1;
+  background: #3B82F6;
+  color: white;
+  border: none;
+  border-radius: 24rpx;
+  padding: 24rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+}

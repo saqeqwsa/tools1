@@ -1,34 +1,30 @@
 /* tools.wxss */
 .container {
-  background-color: #f9fafb;
+  background-color: #f6f6f6;
   min-height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  width: 100%;
+}
+
+/* 测试样式 */
+.test-section {
+  padding: 40rpx;
+  background: #fff;
+  margin: 20rpx;
+  border-radius: 20rpx;
+  text-align: center;
+}
+
+.test-text {
+  font-size: 32rpx;
+  color: #333;
+  font-weight: bold;
 }
 
 /* 顶部区域 */
 .header-section {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
-  padding: 6vw 6vw 8vw 6vw;
-}
-
-@media (max-width: 375px) {
-  .header-section {
-    padding: 32rpx 32rpx 48rpx 32rpx;
-  }
-}
-
-@media (min-width: 376px) and (max-width: 414px) {
-  .header-section {
-    padding: 48rpx 48rpx 64rpx 48rpx;
-  }
-}
-
-@media (min-width: 415px) {
-  .header-section {
-    padding: 56rpx 56rpx 72rpx 56rpx;
-  }
+  padding: 32rpx 48rpx 64rpx 48rpx;
 }
 
 .header-title {
@@ -39,20 +35,8 @@
 }
 
 .main-title {
-  font-size: 8vw;
-  font-weight: 700;
-}
-
-@media (max-width: 375px) {
-  .main-title { font-size: 44rpx; }
-}
-
-@media (min-width: 376px) and (max-width: 414px) {
-  .main-title { font-size: 48rpx; }
-}
-
-@media (min-width: 415px) {
-  .main-title { font-size: 52rpx; }
+  font-size: 48rpx;
+  font-weight: bold;
 }
 
 .notification-icon {
@@ -90,33 +74,9 @@
 
 /* 快速分类 */
 .category-section {
-  padding: 0 6vw;
-  margin-top: -4vw;
-  margin-bottom: 6vw;
-}
-
-@media (max-width: 375px) {
-  .category-section {
-    padding: 0 32rpx;
-    margin-top: -24rpx;
-    margin-bottom: 32rpx;
-  }
-}
-
-@media (min-width: 376px) and (max-width: 414px) {
-  .category-section {
-    padding: 0 48rpx;
-    margin-top: -32rpx;
-    margin-bottom: 48rpx;
-  }
-}
-
-@media (min-width: 415px) {
-  .category-section {
-    padding: 0 56rpx;
-    margin-top: -40rpx;
-    margin-bottom: 56rpx;
-  }
+  padding: 0 48rpx;
+  margin-top: -32rpx;
+  margin-bottom: 48rpx;
 }
 
 .category-card {
@@ -145,13 +105,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 16rpx auto;
+  margin-bottom: 16rpx;
 }
 
-.icon-text {
-  font-size: 36rpx;
-  line-height: 1;
-  font-weight: normal;
+.icon-image {
+  width: 48rpx;
+  height: 48rpx;
 }
 
 .category-name {
@@ -161,29 +120,8 @@
 
 /* 通用section */
 .section {
-  padding: 0 6vw;
-  margin-bottom: 6vw;
-}
-
-@media (max-width: 375px) {
-  .section {
-    padding: 0 32rpx;
-    margin-bottom: 32rpx;
-  }
-}
-
-@media (min-width: 376px) and (max-width: 414px) {
-  .section {
-    padding: 0 48rpx;
-    margin-bottom: 48rpx;
-  }
-}
-
-@media (min-width: 415px) {
-  .section {
-    padding: 0 56rpx;
-    margin-bottom: 56rpx;
-  }
+  padding: 0 48rpx;
+  margin-bottom: 48rpx;
 }
 
 .section-header {
@@ -265,9 +203,9 @@
 }
 
 .arrow-icon {
-  font-size: 32rpx;
-  color: #999;
-  font-weight: bold;
+  width: 32rpx;
+  height: 32rpx;
+  opacity: 0.6;
 }
 
 /* 技能网格 */
@@ -302,24 +240,23 @@
   margin: 0 auto 24rpx auto;
 }
 
-.skill-icon-text {
-  font-size: 48rpx;
-  line-height: 1;
-  color: white;
+.skill-icon-image {
+  width: 64rpx;
+  height: 64rpx;
 }
 
 .skill-title {
   display: block;
   font-size: 32rpx;
   font-weight: 600;
-  color: #1F2937;
+  color: #1a1a1a;
   margin-bottom: 8rpx;
 }
 
 .skill-desc {
   display: block;
   font-size: 24rpx;
-  color: #6B7280;
+  color: #666;
 }
 
 /* 项目卡片 */
@@ -398,22 +335,21 @@
   margin: 0 auto 24rpx auto;
 }
 
-.time-icon-text {
-  font-size: 48rpx;
-  line-height: 1;
-  color: white;
+.time-icon-image {
+  width: 64rpx;
+  height: 64rpx;
 }
 
 .time-title {
   display: block;
   font-size: 32rpx;
   font-weight: 600;
-  color: #1F2937;
+  color: #1a1a1a;
   margin-bottom: 8rpx;
 }
 
 .time-desc {
   display: block;
   font-size: 24rpx;
-  color: #6B7280;
+  color: #666;
 }

@@ -1,0 +1,116 @@
+<!--tool-detail.wxml-->
+<view class="container">
+  <!-- 工具头部信息 -->
+  <view class="tool-header">
+    <view class="tool-main-info">
+      <image class="tool-avatar" src="{{toolInfo.avatar}}"></image>
+      <view class="tool-details">
+        <text class="tool-title">{{toolInfo.title}}</text>
+        <text class="tool-subtitle">{{toolInfo.subtitle}}</text>
+        <view class="tool-meta">
+          <view class="rating-section">
+            <text class="rating-score">{{toolInfo.rating}}</text>
+            <view class="stars">
+              <image class="star" wx:for="{{5}}" wx:key="index" 
+                     src="{{index < toolInfo.starCount ? '../../images/icons/avatar.png' : '../../images/icons/close.png'}}"></image>
+            </view>
+            <text class="rating-count">({{toolInfo.reviewCount}}人评价)</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="tool-actions">
+      <button class="action-btn primary" bindtap="onUseTool">
+        {{toolInfo.price ? '¥' + toolInfo.price : '免费使用'}}
+      </button>
+      <button class="action-btn secondary" bindtap="onCollectTool">
+        <image class="collect-icon" src="../../images/icons/{{toolInfo.isCollected ? 'business-active' : 'business'}}.png"></image>
+      </button>
+    </view>
+  </view>
+
+  <!-- 功能特色 -->
+  <view class="section">
+    <view class="section-title">✨ 功能特色</view>
+    <view class="features-list">
+      <view class="feature-item" wx:for="{{toolInfo.features}}" wx:key="index">
+        <image class="feature-icon" src="../../images/icons/examples.png"></image>
+        <text class="feature-text">{{item}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 工具介绍 -->
+  <view class="section">
+    <view class="section-title">📖 工具介绍</view>
+    <view class="description-card">
+      <text class="description-text">{{toolInfo.description}}</text>
+    </view>
+  </view>
+
+  <!-- 使用教程 -->
+  <view class="section">
+    <view class="section-title">📚 使用教程</view>
+    <view class="tutorial-list">
+      <view class="tutorial-item" wx:for="{{toolInfo.tutorials}}" wx:key="index" bindtap="onTutorialTap" data-tutorial="{{item}}">
+        <view class="tutorial-number">{{index + 1}}</view>
+        <view class="tutorial-content">
+          <text class="tutorial-title">{{item.title}}</text>
+          <text class="tutorial-desc">{{item.description}}</text>
+        </view>
+        <image class="tutorial-arrow" src="../../images/arrow.svg"></image>
+      </view>
+    </view>
+  </view>
+
+  <!-- 用户评价 -->
+  <view class="section">
+    <view class="section-title">💬 用户评价</view>
+    <view class="reviews-list">
+      <view class="review-item" wx:for="{{toolInfo.reviews}}" wx:key="id">
+        <view class="review-header">
+          <image class="reviewer-avatar" src="{{item.avatar}}"></image>
+          <view class="reviewer-info">
+            <text class="reviewer-name">{{item.username}}</text>
+            <view class="review-meta">
+              <view class="review-stars">
+                <image class="star-small" wx:for="{{5}}" wx:key="index" wx:for-item="star" wx:for-index="starIndex"
+                       src="{{starIndex < item.rating ? '../../images/icons/avatar.png' : '../../images/icons/close.png'}}"></image>
+              </view>
+              <text class="review-date">{{item.date}}</text>
+            </view>
+          </view>
+        </view>
+        <text class="review-content">{{item.content}}</text>
+      </view>
+    </view>
+    <view class="load-more" bindtap="onLoadMoreReviews">
+      <text>查看更多评价</text>
+    </view>
+  </view>
+
+  <!-- 相关推荐 -->
+  <view class="section">
+    <view class="section-title">🔗 相关推荐</view>
+    <scroll-view class="related-tools" scroll-x>
+      <view class="related-item" wx:for="{{relatedTools}}" wx:key="id" bindtap="onRelatedToolTap" data-tool="{{item}}">
+        <image class="related-avatar" src="{{item.avatar}}"></image>
+        <text class="related-title">{{item.title}}</text>
+        <text class="related-rating">{{item.rating}}分</text>
+      </view>
+    </scroll-view>
+  </view>
+
+  <!-- 底部操作栏 -->
+  <view class="bottom-actions">
+    <button class="share-btn" bindtap="onShareTool">
+      <image class="share-icon" src="../../images/icons/share.svg"></image>
+      <text>分享</text>
+    </button>
+    <button class="contact-btn" bindtap="onContactSupport">
+      <image class="contact-icon" src="../../images/icons/customer-service.svg"></image>
+      <text>客服</text>
+    </button>
+    <button class="use-now-btn" bindtap="onUseTool">立即使用</button>
+  </view>
+</view>

@@ -95,15 +95,15 @@ Page({
         id: 1,
         title: '番茄钟',
         description: '专注工作法',
-        iconText: '🕒',
-        gradient: 'linear-gradient(135deg, #A78BFA, #8B5CF6)'
+        iconText: '🍅',
+        gradient: 'linear-gradient(135deg, #8B5CF6, #7C3AED)'
       },
       {
         id: 2,
         title: '任务清单',
         description: '高效任务管理',
         iconText: '✅',
-        gradient: 'linear-gradient(135deg, #FB923C, #F97316)'
+        gradient: 'linear-gradient(135deg, #F59E0B, #D97706)'
       }
     ]
   },
