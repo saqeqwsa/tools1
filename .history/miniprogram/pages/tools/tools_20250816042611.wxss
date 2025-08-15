@@ -624,15 +624,6 @@
   gap: 3vw;
 }
 
-/* 时间管理一行显示网格 */
-.time-grid-inline {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  width: 100%;
-  gap: 3vw;
-}
-
 .time-item {
   background: white;
   border-radius: 32rpx;
@@ -644,29 +635,9 @@
   flex-shrink: 0;
 }
 
-/* 时间管理一行显示项目 */
-.time-item-inline {
-  background: white;
-  border-radius: 32rpx;
-  padding: 32rpx;
-  text-align: center;
-  box-shadow: 0 8rpx 40rpx rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  flex-shrink: 0;
-  box-sizing: border-box;
-}
-
 @media (max-width: 375px) {
   .time-item {
     width: calc(50% - 8rpx);
-  }
-  
-  .time-grid-inline {
-    gap: 16rpx;
-  }
-  
-  .time-item-inline {
-    padding: 24rpx;
   }
 }
 
@@ -674,27 +645,11 @@
   .time-item {
     width: calc(50% - 10rpx);
   }
-  
-  .time-grid-inline {
-    gap: 20rpx;
-  }
-  
-  .time-item-inline {
-    padding: 32rpx;
-  }
 }
 
 @media (min-width: 415px) {
   .time-item {
     width: calc(50% - 12rpx);
-  }
-  
-  .time-grid-inline {
-    gap: 24rpx;
-  }
-  
-  .time-item-inline {
-    padding: 36rpx;
   }
 }
 
@@ -703,18 +658,9 @@
   .time-item {
     width: calc(33.333% - 2vw);
   }
-  
-  /* 一行显示在横屏时保持2列 */
-  .time-grid-inline {
-    gap: 4vw;
-  }
 }
 
 .time-item:active {
-  transform: scale(0.98);
-}
-
-.time-item-inline:active {
   transform: scale(0.98);
 }
 

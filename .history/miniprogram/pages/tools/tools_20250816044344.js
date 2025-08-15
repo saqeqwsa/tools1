@@ -30,10 +30,10 @@ Page({
       {
         id: 4,
         name: '二维码生成',
-        iconText: '📱',
+        iconText: '📈',
         bgColor: '#FED7AA',
         iconColor: '#EA580C',
-        type: 'qrcode'
+        type: 'data'
       }
     ],
     categoryItemWidth: '25%', // 动态计算的分类项宽度

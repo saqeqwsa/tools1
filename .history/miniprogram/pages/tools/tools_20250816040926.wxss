@@ -70,10 +70,9 @@
   background: rgba(255, 255, 255, 0.2);
   border: 2rpx solid rgba(255, 255, 255, 0.3);
   border-radius: 48rpx;
-  padding: 48rpx 72rpx 48rpx 32rpx; /* 上下padding翻倍：48rpx，左32rpx，右72rpx */
+  padding: 24rpx 32rpx;
   color: white;
   font-size: 28rpx;
-  box-sizing: border-box;
 }
 
 .search-input::placeholder {
@@ -82,53 +81,11 @@
 
 .search-icon {
   position: absolute;
-  right: 32rpx; /* 距离右边32rpx，与左边距保持一致 */
+  right: 32rpx;
   top: 50%;
   transform: translateY(-50%);
   width: 32rpx;
   height: 32rpx;
-  pointer-events: none; /* 防止图标阻挡点击 */
-  opacity: 0.8;
-}
-
-/* 响应式搜索框样式 */
-@media (max-width: 375px) {
-  .search-input {
-    padding: 40rpx 64rpx 40rpx 28rpx; /* 小屏适配，上下padding翻倍：40rpx */
-    font-size: 26rpx;
-  }
-  
-  .search-icon {
-    right: 28rpx;
-    width: 28rpx;
-    height: 28rpx;
-  }
-}
-
-@media (min-width: 376px) and (max-width: 414px) {
-  .search-input {
-    padding: 48rpx 72rpx 48rpx 32rpx; /* 中屏标准，上下padding翻倍：48rpx */
-    font-size: 28rpx;
-  }
-  
-  .search-icon {
-    right: 32rpx;
-    width: 32rpx;
-    height: 32rpx;
-  }
-}
-
-@media (min-width: 415px) {
-  .search-input {
-    padding: 52rpx 76rpx 52rpx 36rpx; /* 大屏优化，上下padding翻倍：52rpx */
-    font-size: 30rpx;
-  }
-  
-  .search-icon {
-    right: 36rpx;
-    width: 34rpx;
-    height: 34rpx;
-  }
 }
 
 /* 快速分类 */
@@ -246,52 +203,10 @@
   margin: 0 auto 16rpx auto;
 }
 
-/* 一行显示时的图标大小调整 */
-.category-item-inline .category-icon {
-  width: 80rpx;
-  height: 80rpx;
-  border-radius: 20rpx;
-  margin: 0 auto;
-  flex-shrink: 0;
-}
-
-@media (max-width: 375px) {
-  .category-item-inline .category-icon {
-    width: 68rpx;
-    height: 68rpx;
-    border-radius: 16rpx;
-  }
-}
-
-@media (min-width: 415px) {
-  .category-item-inline .category-icon {
-    width: 88rpx;
-    height: 88rpx;
-    border-radius: 22rpx;
-  }
-}
-
 .icon-text {
   font-size: 36rpx;
   line-height: 1;
   font-weight: normal;
-}
-
-/* 一行显示时的图标文字大小调整 */
-.category-item-inline .icon-text {
-  font-size: 30rpx;
-}
-
-@media (max-width: 375px) {
-  .category-item-inline .icon-text {
-    font-size: 26rpx;
-  }
-}
-
-@media (min-width: 415px) {
-  .category-item-inline .icon-text {
-    font-size: 32rpx;
-  }
 }
 
 .category-name {
@@ -449,15 +364,6 @@
   gap: 3vw;
 }
 
-/* 技能学习一行显示网格 */
-.skill-grid-inline {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  width: 100%;
-  gap: 3vw;
-}
-
 .skill-item {
   background: white;
   border-radius: 32rpx;
@@ -469,29 +375,9 @@
   flex-shrink: 0;
 }
 
-/* 技能学习一行显示项目 */
-.skill-item-inline {
-  background: white;
-  border-radius: 32rpx;
-  padding: 32rpx;
-  text-align: center;
-  box-shadow: 0 8rpx 40rpx rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  flex-shrink: 0;
-  box-sizing: border-box;
-}
-
 @media (max-width: 375px) {
   .skill-item {
     width: calc(50% - 8rpx);
-  }
-  
-  .skill-grid-inline {
-    gap: 16rpx;
-  }
-  
-  .skill-item-inline {
-    padding: 24rpx;
   }
 }
 
@@ -499,27 +385,11 @@
   .skill-item {
     width: calc(50% - 10rpx);
   }
-  
-  .skill-grid-inline {
-    gap: 20rpx;
-  }
-  
-  .skill-item-inline {
-    padding: 32rpx;
-  }
 }
 
 @media (min-width: 415px) {
   .skill-item {
     width: calc(50% - 12rpx);
-  }
-  
-  .skill-grid-inline {
-    gap: 24rpx;
-  }
-  
-  .skill-item-inline {
-    padding: 36rpx;
   }
 }
 
@@ -528,18 +398,9 @@
   .skill-item {
     width: calc(33.333% - 2vw);
   }
-  
-  /* 一行显示在横屏时保持2列 */
-  .skill-grid-inline {
-    gap: 4vw;
-  }
 }
 
 .skill-item:active {
-  transform: scale(0.98);
-}
-
-.skill-item-inline:active {
   transform: scale(0.98);
 }
 
@@ -624,15 +485,6 @@
   gap: 3vw;
 }
 
-/* 时间管理一行显示网格 */
-.time-grid-inline {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  width: 100%;
-  gap: 3vw;
-}
-
 .time-item {
   background: white;
   border-radius: 32rpx;
@@ -644,29 +496,9 @@
   flex-shrink: 0;
 }
 
-/* 时间管理一行显示项目 */
-.time-item-inline {
-  background: white;
-  border-radius: 32rpx;
-  padding: 32rpx;
-  text-align: center;
-  box-shadow: 0 8rpx 40rpx rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  flex-shrink: 0;
-  box-sizing: border-box;
-}
-
 @media (max-width: 375px) {
   .time-item {
     width: calc(50% - 8rpx);
-  }
-  
-  .time-grid-inline {
-    gap: 16rpx;
-  }
-  
-  .time-item-inline {
-    padding: 24rpx;
   }
 }
 
@@ -674,27 +506,11 @@
   .time-item {
     width: calc(50% - 10rpx);
   }
-  
-  .time-grid-inline {
-    gap: 20rpx;
-  }
-  
-  .time-item-inline {
-    padding: 32rpx;
-  }
 }
 
 @media (min-width: 415px) {
   .time-item {
     width: calc(50% - 12rpx);
-  }
-  
-  .time-grid-inline {
-    gap: 24rpx;
-  }
-  
-  .time-item-inline {
-    padding: 36rpx;
   }
 }
 
@@ -703,18 +519,9 @@
   .time-item {
     width: calc(33.333% - 2vw);
   }
-  
-  /* 一行显示在横屏时保持2列 */
-  .time-grid-inline {
-    gap: 4vw;
-  }
 }
 
 .time-item:active {
-  transform: scale(0.98);
-}
-
-.time-item-inline:active {
   transform: scale(0.98);
 }
 

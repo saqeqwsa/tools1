@@ -59,13 +59,8 @@
     <view class="section-header">
       <text class="section-title">📚 技能学习</text>
     </view>
-    <view class="skill-grid-inline">
-      <view class="skill-item-inline" 
-            style="width: {{skillItemWidth}};" 
-            wx:for="{{skillCategories}}" 
-            wx:key="id" 
-            bindtap="onSkillTap" 
-            data-skill="{{item}}">
+    <view class="skill-grid">
+      <view class="skill-item" wx:for="{{skillCategories}}" wx:key="id" bindtap="onSkillTap" data-skill="{{item}}">
         <view class="skill-icon" style="background: {{item.gradient}};">
           <text class="skill-icon-text">{{item.iconText}}</text>
         </view>
@@ -98,13 +93,8 @@
     <view class="section-header">
       <text class="section-title">⏰ 时间管理</text>
     </view>
-    <view class="time-grid-inline">
-      <view class="time-item-inline" 
-            style="width: {{timeItemWidth}};" 
-            wx:for="{{timeTools}}" 
-            wx:key="id" 
-            bindtap="onTimeToolTap" 
-            data-tool="{{item}}">
+    <view class="time-grid">
+      <view class="time-item" wx:for="{{timeTools}}" wx:key="id" bindtap="onTimeToolTap" data-tool="{{item}}">
         <view class="time-icon" style="background: {{item.gradient}};">
           <text class="time-icon-text">{{item.iconText}}</text>
         </view>

@@ -29,11 +29,11 @@ Page({
       },
       {
         id: 4,
-        name: '二维码生成',
-        iconText: '📱',
+        name: '数据分析',
+        iconText: '📈',
         bgColor: '#FED7AA',
         iconColor: '#EA580C',
-        type: 'qrcode'
+        type: 'data'
       }
     ],
     categoryItemWidth: '25%', // 动态计算的分类项宽度
@@ -160,64 +160,9 @@ Page({
   onCategoryTap(e) {
     const category = e.currentTarget.dataset.category;
     console.log('选择分类:', category);
-    
-    // 特殊处理：二维码生成跳转到外部小程序
-    if (category.name === '二维码生成') {
-      this.navigateToExternalMiniProgram();
-      return;
-    }
-    
-    // 其他分类的默认处理
     wx.showToast({
       title: `${category.name}分类`,
       icon: 'none'
-    });
-  },
-
-  // 跳转到外部小程序 - 快豆工具箱
-  navigateToExternalMiniProgram() {
-    wx.navigateToMiniProgram({
-      appId: 'wx91d27dbf599dff74', // 快豆工具箱的appId
-      path: 'pages/qrcode/qrcode', // 二维码生成页面路径
-      extraData: {
-        from: '副业工具箱',
-        feature: '二维码生成'
-      },
-      envVersion: 'release', // 正式版
-      success: (res) => {
-        console.log('成功跳转到快豆工具箱');
-      },
-      fail: (err) => {
-        console.error('跳转失败:', err);
-        // 跳转失败的处理
-        this.handleNavigationFallback();
-      }
-    });
-  },
-
-  // 跳转失败的备用处理
-  handleNavigationFallback() {
-    wx.showModal({
-      title: '提示',
-      content: '未找到快豆工具箱小程序，请先搜索并使用过该小程序后再试',
-      showCancel: true,
-      cancelText: '取消',
-      confirmText: '去搜索',
-      success: (res) => {
-        if (res.confirm) {
-          // 复制小程序链接到剪贴板
-          wx.setClipboardData({
-            data: '#小程序://快豆工具箱/OCFdkNyq5d0gEyc',
-            success: () => {
-              wx.showToast({
-                title: '链接已复制，请在微信中打开',
-                icon: 'none',
-                duration: 3000
-              });
-            }
-          });
-        }
-      }
     });
   },
 

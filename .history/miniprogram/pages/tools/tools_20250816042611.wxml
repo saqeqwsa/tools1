@@ -98,13 +98,8 @@
     <view class="section-header">
       <text class="section-title">⏰ 时间管理</text>
     </view>
-    <view class="time-grid-inline">
-      <view class="time-item-inline" 
-            style="width: {{timeItemWidth}};" 
-            wx:for="{{timeTools}}" 
-            wx:key="id" 
-            bindtap="onTimeToolTap" 
-            data-tool="{{item}}">
+    <view class="time-grid">
+      <view class="time-item" wx:for="{{timeTools}}" wx:key="id" bindtap="onTimeToolTap" data-tool="{{item}}">
         <view class="time-icon" style="background: {{item.gradient}};">
           <text class="time-icon-text">{{item.iconText}}</text>
         </view>

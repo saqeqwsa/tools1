@@ -660,41 +660,17 @@
   .time-item {
     width: calc(50% - 8rpx);
   }
-  
-  .time-grid-inline {
-    gap: 16rpx;
-  }
-  
-  .time-item-inline {
-    padding: 24rpx;
-  }
 }
 
 @media (min-width: 376px) and (max-width: 414px) {
   .time-item {
     width: calc(50% - 10rpx);
   }
-  
-  .time-grid-inline {
-    gap: 20rpx;
-  }
-  
-  .time-item-inline {
-    padding: 32rpx;
-  }
 }
 
 @media (min-width: 415px) {
   .time-item {
     width: calc(50% - 12rpx);
-  }
-  
-  .time-grid-inline {
-    gap: 24rpx;
-  }
-  
-  .time-item-inline {
-    padding: 36rpx;
   }
 }
 
@@ -703,18 +679,9 @@
   .time-item {
     width: calc(33.333% - 2vw);
   }
-  
-  /* 一行显示在横屏时保持2列 */
-  .time-grid-inline {
-    gap: 4vw;
-  }
 }
 
 .time-item:active {
-  transform: scale(0.98);
-}
-
-.time-item-inline:active {
   transform: scale(0.98);
 }
 
